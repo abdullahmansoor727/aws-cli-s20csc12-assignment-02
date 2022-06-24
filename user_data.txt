@@ -1,0 +1,8 @@
+apt update -y
+apt install nginx -y 
+apt install unzip -y
+systemctl start nginx && systemctl enable nginx
+wget https://www.free-css.com/assets/files/free-css-templates/download/page280/heustonn.zip
+unzip *.zip
+rm /var/www/html/*
+mv ./*/* /var/www/html

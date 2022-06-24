@@ -11,7 +11,7 @@ fi
 
 
 STUDENT_NAME="Abdullah Mansoor Sufi"
-AWS_CLI_VERSION=$(aws --version | awk '{print $1}' | tr "/" "-")
+AWS_CLI_VERSION=$(aws --version | awk '{print $1}' | cut -d / -f 2)
 NGINX_VERSION=$(nginx -v 2>&1 | awk -F' ' '{print $3}' | cut -d / -f 2)
 
 
